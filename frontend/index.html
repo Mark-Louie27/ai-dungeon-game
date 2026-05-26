@@ -5,6 +5,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Chronicles of the Void</title>
   <link rel="stylesheet" href="css/style.css" />
+
+  <!-- Favicon -->
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>⚔️</text></svg>" />
 </head>
 <body>
 
@@ -12,9 +15,23 @@
 
   <!-- Header -->
   <header class="game-header">
-    <div class="game-title">⚔ Chronicles of the Void</div>
-    <div class="game-tagline">An Dungeon Adventure</div>
-  </header>
+  <svg width="80" height="80" viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg" style="margin-bottom:10px;">
+    <!-- Outer ring -->
+    <circle cx="40" cy="40" r="38" stroke="#c8a96e" stroke-width="1.5" fill="none" opacity="0.4"/>
+    <circle cx="40" cy="40" r="32" stroke="#c8a96e" stroke-width="0.5" fill="none" opacity="0.2"/>
+    <!-- Crossed swords -->
+    <line x1="20" y1="20" x2="60" y2="60" stroke="#c8a96e" stroke-width="2.5" stroke-linecap="round"/>
+    <line x1="60" y1="20" x2="20" y2="60" stroke="#c8a96e" stroke-width="2.5" stroke-linecap="round"/>
+    <!-- Sword guards -->
+    <line x1="28" y1="28" x2="52" y2="28" stroke="#c8a96e" stroke-width="1.5" stroke-linecap="round" opacity="0.7"/>
+    <line x1="28" y1="52" x2="52" y2="52" stroke="#c8a96e" stroke-width="1.5" stroke-linecap="round" opacity="0.7"/>
+    <!-- Center gem -->
+    <circle cx="40" cy="40" r="4" fill="#c8a96e" opacity="0.9"/>
+    <circle cx="40" cy="40" r="2" fill="#0d0d0f"/>
+  </svg>
+  <div class="game-title">⚔ Chronicles of the Void</div>
+  <div class="game-tagline">An Dungeon Adventure</div>
+</header>
 
   <!-- Stats Bar (hidden until game starts) -->
   <div id="stats-bar" class="stats-bar" style="display:none">
