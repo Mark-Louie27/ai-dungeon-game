@@ -1,0 +1,10 @@
+services:
+  - type: web
+    name: ai-dungeon-backend
+    runtime: node
+    rootDir: backend
+    buildCommand: npm install
+    startCommand: npm start
+    envVars:
+      - key: GROQ_API_KEY
+        sync: false

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Chronicles of the Void</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+<div class="game-container">
+
+  <!-- Header -->
+  <header class="game-header">
+    <div class="game-title">⚔ Chronicles of the Void</div>
+    <div class="game-tagline">An Dungeon Adventure</div>
+  </header>
+
+  <!-- Stats Bar (hidden until game starts) -->
+  <div id="stats-bar" class="stats-bar" style="display:none">
+    <div class="stat-chip"><span>⚔</span> <span id="stat-char">—</span></div>
+    <div class="stat-chip hp"><span>♥</span> HP <span id="stat-hp" class="value">10/10</span></div>
+    <div class="stat-chip xp"><span>★</span> XP <span id="stat-xp" class="value">0</span></div>
+    <div class="stat-chip loc"><span>◈</span> <span id="stat-loc" class="value">—</span></div>
+    <button class="btn" onclick="goHome()" style="margin-left:auto;padding:4px 12px;font-size:12px">← Menu</button>
+  </div>
+
+  <!-- ── SCREEN: Home ── -->
+  <div id="screen-home" class="screen active">
+
+    <div class="section-title">Choose Your Hero</div>
+    <div class="char-grid">
+      <div class="char-card" onclick="startGame('Rogue')">
+        <div class="char-icon">🗡️</div>
+        <div class="char-name">Rogue</div>
+        <div class="char-desc">Swift and cunning. Thrives in shadows and deception.</div>
+      </div>
+      <div class="char-card" onclick="startGame('Mage')">
+        <div class="char-icon">🔮</div>
+        <div class="char-name">Mage</div>
+        <div class="char-desc">Master of arcane arts. Immense power at a cost.</div>
+      </div>
+      <div class="char-card" onclick="startGame('Knight')">
+        <div class="char-icon">🛡️</div>
+        <div class="char-name">Knight</div>
+        <div class="char-desc">Steadfast warrior bound by honor and steel.</div>
+      </div>
+      <div class="char-card" onclick="startGame('Ranger')">
+        <div class="char-icon">🏹</div>
+        <div class="char-name">Ranger</div>
+        <div class="char-desc">Eyes of the wild. Patient hunter, never misses.</div>
+      </div>
+    </div>
+
+    <div class="section-title" style="margin-top:2rem">Saved Adventures</div>
+    <div class="sessions-panel">
+      <div id="session-list">
+        <div style="color:var(--text-muted);font-size:14px;padding:8px 0">Loading…</div>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- ── SCREEN: Game ── -->
+  <div id="screen-game" class="screen">
+
+    <div class="story-area" id="story-area"></div>
+
+    <div class="choices-section" id="choices-area"></div>
+
+  </div>
+
+</div>
+
+<script src="js/game.js"></script>
+</body>
+</html>
