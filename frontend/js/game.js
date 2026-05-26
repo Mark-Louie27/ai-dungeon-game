@@ -1,7 +1,8 @@
 // Change the production URL below to your Render backend URL after deploying
-const API = window.location.hostname === 'localhost'
-  ? 'http://localhost:3000/api/game'
-  : 'https://your-backend.onrender.com/api/game';
+const API =
+  window.location.hostname === "localhost"
+    ? "http://localhost:3000/api/game"
+    : "https://ai-dungeon-game-3isr.onrender.com";
 
 const state = {
   sessionId: null,
